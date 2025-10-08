@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evenements</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
+</head>
+<body>
+      <!-- ==================== NAVIGATION ==================== -->
+    <nav>
+        <div class="container">
+            <a href="" class="logo">Compus<span>Connect</span></a>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html" onclick="closeMenu()">Accueil</a></li>
+                <li><a href="formations.html" onclick="closeMenu()">Formations</a></li>
+                <li><a href="evenements.html" onclick="closeMenu()">Evenements</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Conctact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ==================== ÉVÉNEMENTS ==================== -->
+    <section id="evenements">
+        <div class="section-header">
+            <span class="tag">A venir</span>
+            <h2>Événements & Rencontres</h2>
+            <p>Participez a nos evenements.</p>
+        </div>
+        <div class="events-container">
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="date-badge">15 NOV</span>
+                </div>
+                <div class="event-dot"></div>
+                <div class="event-content">
+                    <h3>🎤 Des interveur avec des autres developpeurs </h3>
+                    <p>Une journée immersive avec des experts de l'industrie qui partagent leurs visions sur les technologies émergentes, les frameworks du futur et les meilleures pratiques pour rester à la pointe de l'innovation. Inscription gratuite pour tous.</p>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="date-badge">28 NOV</span>
+                </div>
+                <div class="event-dot"></div>
+                <div class="event-content">
+                    <h3>🏆 speedDev</h3>
+                    <p>challenge pour cree des applications avec votre equipe dans un periode limite.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <p>&copy; 2025 CompusConnect - Ecole de developpement Informatique</p>
+        <p>Tous droit reserves | Mentions legales | Politique de confidentialite</p>
+    </footer>
+    <!-- ==================== burger menu  ==================== -->
+    <script>
+        function toggleMenu() {
+            var navMenu = document.getElementById('navMenu');
+            var burger = document.querySelector('.burger-menu');
+            navMenu.classList.toggle('active');
+            burger.classList.toggle('active');
+        }
+        function closeMenu() {
+            var navMenu = document.getElementById('navMenu');
+            var burger = document.querySelector('.burger-menu');
+            navMenu.classList.remove('active');
+            burger.classList.remove('active');
+        }
+    </script>
+</body>
+</html>

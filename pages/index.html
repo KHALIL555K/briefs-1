@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - École de Développement Informatique</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
+   
+</head>
+<body>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav>
+        <div class="container">
+            <a href="" class="logo">Compus<span>Connect</span></a>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html" onclick="closeMenu()">Accueil</a></li>
+                <li><a href="formations.html" onclick="closeMenu()">Formations</a></li>
+                <li><a href="evenements.html" onclick="closeMenu()">Evenements</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Conctact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="accueil">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Bonjour a  <span class="highlight">Compus </span> Connect</h1>
+                <p>Bonjour tout le Monde! a Youcode Nador pour devenir un bon developpeur.</p>
+                <div class="hero-buttons">
+                    <a href="" class="btn-primary">Decouvrir les formations</a>
+                    <a href="" class="btn-secondary">Nous contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../img/iamge teamwork.jpg" alt="Lorem ipsum">
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <p>&copy; 2025 CompusConnect - Ecole de developpement Informatique</p>
+        <p>Tous droit reserves | Mentions legales | Politique de confidentialite</p>
+    </footer>
+    <!-- ==================== burger menu  ==================== -->
+    <script>
+        function toggleMenu() {
+            var navMenu = document.getElementById('navMenu');
+            var burger = document.querySelector('.burger-menu');
+            navMenu.classList.toggle('active');
+            burger.classList.toggle('active');
+        }
+        function closeMenu() {
+            var navMenu = document.getElementById('navMenu');
+            var burger = document.querySelector('.burger-menu');
+            navMenu.classList.remove('active');
+            burger.classList.remove('active');
+        }
+    </script>
+</body>
+</html>
