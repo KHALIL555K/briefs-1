@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallerie | YouCode Nador</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+        <!-- ==================== NAVIGATION ==================== -->
+    <nav>
+        <div class="container">
+            <a href="" class="logo">Compus<span>Connect</span></a>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="../index.html" onclick="closeMenu()">Accueil</a></li>
+                <li><a href="formations.html" onclick="closeMenu()">Formations</a></li>
+                <li><a href="evenements.html" onclick="closeMenu()">Evenements</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Conctact</a></li>
+                <li><a href="listEtudiant.html" onclick="closeMenu()">list etudiants</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="main-section">
+        <section class="title-section">
+            <div class="title-left">
+                <h1>Gallerie YouCode Nador!</h1>
+                <p>bonjour a nous gallery de Youcode !</p>
+            </div>
+            <div class="title-right">
+                <h4>Categorie : </h4>
+                <ul>
+                    <li class="li">Tout</li>
+                    <li>evenement</li>
+                    <li>dans les classes</li>
+                    <li>salle de jeux</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-cards">
+            <section class="section-card" style="grid-area: box-1;">
+                <img src="../img/Youcode1.jpg" alt="">
+            </section>
+
+            <section class="section-card" style="grid-area: box-2;">
+               <img src="../img/windows.jpg" alt="">
+            </section>
+
+            <section class="section-card" style="grid-area: box-3;">
+                <img src="../img/earth.jpg" alt="">
+            </section>
+
+            <section class="section-card" style="grid-area: box-4;">
+                <img src="../img/samurai.jpg" alt="">
+            </section>
+
+            <section class="section-card" style="grid-area: box-5;">
+               <img src="../img/italienCity.jpg" alt="">
+            </section>
+            <section class="section-card" style="grid-area: box-6;">
+               <img src="../img/caracter.jpg" alt="">
+            </section>
+            <section class="section-card" style="grid-area: box-7;">
+               <img src="../img/tree.jpg" alt="">
+            </section>
+            <section class="section-card" style="grid-area: box-8;">
+               <img src="../img/windowsXP.jpg" alt="">
+            </section>
+
+            <section class="section-card" style="grid-area: box-9;">
+               <img src="../img/maison.jpg" alt="">
+            </section>
+            <section class="section-card" style="grid-area: box-10;">
+               <img src="../img/natsunotaisai.jpg" alt="">
+            </section>
+            <section class="section-card" style="grid-area: box-11;">
+               <img src="../img/moon.jpg" alt="">
+            </section>
+            <section class="section-card" style="grid-area: box-12;">
+               <img src="../img/window11.jpg" alt="">
+            </section>
+        </section>
+
+
+    </section>
+    
+
+
+
+
+    
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <p>&copy; 2025 CompusConnect - Ecole de developpement Informatique</p>
+        <p>Tous droit reserves | Mentions legales | Politique de confidentialite</p>
+    </footer>
+    <!-- ==================== burger menu  ==================== -->
+    <script>
+        function toggleMenu() {
+            var navMenu = document.getElementById('navMenu');
+            var burger = document.querySelector('.burger-menu');
+            navMenu.classList.toggle('active');
+            burger.classList.toggle('active');
+        }
+        function closeMenu() {
+            var navMenu = document.getElementById('navMenu');
+            var burger = document.querySelector('.burger-menu');
+            navMenu.classList.remove('active');
+            burger.classList.remove('active');
+        }
+    </script>
+    
+</body>
+</html>
